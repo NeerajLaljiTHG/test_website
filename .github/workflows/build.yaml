@@ -1,4 +1,3 @@
-# build.yaml
 name: Static Site Example Build
 
 on:
@@ -13,8 +12,8 @@ jobs:
     steps:
       - name: Remove unused build gunk from runner
         run: |
-          sudo rm -rf /usr/share/dotnet          
-          sudo rm -rf /opt/ghc          
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - name: Checkout
         uses: actions/checkout@v3
